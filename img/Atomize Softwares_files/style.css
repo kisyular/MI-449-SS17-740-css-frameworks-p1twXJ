@@ -40,11 +40,8 @@ nav li a {
   height: auto;
   margin: auto 0;
 }
- h2 {
-  margin-left: 18%;
-}
-.container h1{
-  margin-left: 20%;
+.container h1 {
+  margin: auto 0;
 }
 @media screen and (max-width: 780px) {
     nav ul {
