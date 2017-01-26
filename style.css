@@ -67,7 +67,7 @@ nav li a {
 .container-fluid h1{
   text-align: center;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 992px) {
     nav ul {
         width: 100%;
         display: block;
