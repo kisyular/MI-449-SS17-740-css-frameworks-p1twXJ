@@ -3,24 +3,43 @@
     overflow: hidden;
     background-color: #333;
 }
+nav ul li:first-child { float: left; }
 
-nav li {
-    float: left;
+nav ul li {
     color: white;
+    display: inline;
+    float: left;
+    text-align: right;
+}
 
+.navbar {
+  background-color: #333333;
+  margin: auto 15px;
+  padding: 0 20px;
 }
 nav li a:hover {
     text-decoration: none;
-    color: yellow;
+    color: black;
 }
 .container li {
   list-style: none;
   margin: 30px;
+
+
+}
+nav li span {
+  color: white;
+  padding: 14px 16px;
+  display: block;
+  font-style: oblique;
+  margin-right: 100px;
 }
 nav li a {
     color: white;
     padding: 14px 16px;
     display: block;
+    font-style: oblique;
+
 }
 #left {
   float: left;
@@ -28,7 +47,9 @@ nav li a {
   width: 50%;
   border: 1px solid grey;
 }
-
+#right ul, #left ul {
+  list-style-type: none;
+}
 #right {
   float: right;
   display: inline;
@@ -36,15 +57,15 @@ nav li a {
   border: 1px solid grey;
 }
 .itemDisplay {
-  width:50%;
+  width:80%;
   height: auto;
   margin: auto 0;
 }
  h2 {
-  margin-left: 18%;
+  text-align: center;
 }
-.container h1{
-  margin-left: 20%;
+.container-fluid h1{
+  text-align: center;
 }
 @media screen and (max-width: 780px) {
     nav ul {
@@ -58,21 +79,21 @@ nav li a {
         float: left;
         position: relative;
     }
-    nav li a {
+    nav li {
         border: 1px solid #576979;
     }
-    nav a {
+    nav a, nav span{
         text-align: left;
         width: 100%;
         text-indent: 30%;
     }
-    .container #left {
+    .container-fluid #left {
       float: left;
       display: block;
       width: 100%;
       margin: 0 auto;
     }
-    .container #right {
+    .container-fluid #right {
       display: block;
       width: 100%;
     }
@@ -81,7 +102,7 @@ nav li a {
       height: auto;
       margin: auto 0;
     }
-    .container h4, h2, h1 {
+    .container-fluid h4, h2, h1 {
       margin-left: 40%;
     }
 
